@@ -25,7 +25,7 @@ h1 span {
 }
 
 button.reset {
-    margin-top: 0px;
+    margin-bottom: 5px;
     font-size: 15px;
     background-color: #1f313b;
     color: aquamarine;
@@ -44,4 +44,22 @@ p {
     color: white;
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        margin: 40px 0 40px;
+    }
+
+    .board {
+        width: 310px;
+        height: 310px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
 }

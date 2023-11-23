@@ -25,3 +25,15 @@
     color: aquamarine;
     font-size: 120px;
 }
+
+
+@media screen and (max-width: 768px) {
+ .square {
+    width: 100px;
+    height: 100px;
+ }   
+
+ .circle, .cross {
+    font-size: 60px;
+ }
+}

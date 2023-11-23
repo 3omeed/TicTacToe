@@ -25,7 +25,7 @@ To accomplish this project I should have - build a react app - style the main el
 ### Screenshot
 
 ![desktop](./public/desktop-screenshot.png)
-![mobile]()
+![mobile](./public/mobile-screenshot.png)
 
 ### Links
 

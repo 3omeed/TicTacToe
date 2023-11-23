@@ -38,7 +38,7 @@ const TicTacToe = () => {
         setWinningMsg('circle Wins')
       } else if (crossWin) {
         console.log('Cross Win');
-        setWinningMsg('circle Wins')
+        setWinningMsg('cross Wins')
       } else if (!circleWin && !crossWin && cells.every((cell) => cell !== "")) {
         console.log('Draw');
         setWinningMsg('It\'s a Draw')
