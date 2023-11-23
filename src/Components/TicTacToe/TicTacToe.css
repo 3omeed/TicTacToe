@@ -1,0 +1,47 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    width: 490px;
+    height: 490px;
+     background-color: #0f1b21;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+h1 span {
+    color: aquamarine;
+}
+
+button.reset {
+    margin-top: 0px;
+    font-size: 15px;
+    background-color: #1f313b;
+    color: aquamarine;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.reset:hover {
+    background-color: #314d5d;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}

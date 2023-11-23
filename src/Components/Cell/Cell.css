@@ -1,0 +1,27 @@
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #1f313b;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+.square:hover {
+    background-color: #314d5d;
+    cursor: pointer;
+}
+
+.circle {
+    color: yellow;
+    font-size: 120px;
+}
+
+.cross {
+    color: aquamarine;
+    font-size: 120px;
+}
