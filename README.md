@@ -29,7 +29,7 @@ To accomplish this project I should have - build a react app - style the main el
 
 ### Links
 
-- Live Site URL: [live](https://3omeed.github.io/TicTacToe/)
+- Live Site URL: [live](https://vocal-blini-c2539a.netlify.app/)
 
 ## My process
 
