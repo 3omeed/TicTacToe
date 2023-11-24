@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './TicTacToe.css';
 import Cell from '../Cell/Cell';
 // import './Cell.css';
@@ -19,32 +19,36 @@ const winsCombos = [
 const TicTacToe = () => {
   const [cells, setCells] = useState(['', '', '', '', '', '', '', '', '']);
   const [go, setGo] = useState('cross');
-  const [winningMsg, setWinningMsg] = useState('')
+  const [winningMsg, setWinningMsg] = useState('');
 
   console.log(cells);
 
   const resetHandler = () => {
     setCells(['', '', '', '', '', '', '', '', '']);
-    setWinningMsg("")
+    setWinningMsg('');
   };
 
   useEffect(() => {
     winsCombos.forEach((combo) => {
-      const circleWin = combo.every((cell) => cells[cell] === "circle");
-      const crossWin = combo.every((cell) => cells[cell] === "cross");
+      const circleWin = combo.every((cell) => cells[cell] === 'circle');
+      const crossWin = combo.every((cell) => cells[cell] === 'cross');
 
       if (circleWin) {
         console.log('Circle Win');
-        setWinningMsg('circle Wins')
+        setWinningMsg('circle Wins');
       } else if (crossWin) {
         console.log('Cross Win');
-        setWinningMsg('cross Wins')
-      } else if (!circleWin && !crossWin && cells.every((cell) => cell !== "")) {
+        setWinningMsg('cross Wins');
+      } else if (
+        !circleWin &&
+        !crossWin &&
+        cells.every((cell) => cell !== '')
+      ) {
         console.log('Draw');
-        setWinningMsg('It\'s a Draw')
+        setWinningMsg("It's a Draw");
       }
-    })
-  }, [cells])
+    });
+  }, [cells]);
 
   const checkWin = () => {
     // if (cells[0] === cells[1] && cells[1] === cells[2] && cells[2] !== '') {
@@ -112,14 +116,14 @@ const TicTacToe = () => {
               setCells={setCells}
               id={index}
               cell={cell}
-              winningMsg = {winningMsg}
+              winningMsg={winningMsg}
             />
           );
         })}
       </div>
-      {!winningMsg?  <p>{`It's Now ${go} Turn!`}</p> : <p>{winningMsg}</p>}
+      {!winningMsg ? <p>{`It's Now ${go} Turn!`}</p> : <p>{winningMsg}</p>}
 
-       <button className="reset" onClick={resetHandler}>
+      <button className="reset" onClick={resetHandler}>
         {' '}
         Reset
       </button>
